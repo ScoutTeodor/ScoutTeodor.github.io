@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang=“ru">
+<head>
+    <title>Лабораторная 1</title>
+    <link href="outlines.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Лабораторная, Первая, 1, HTML, Web">
+</head>
+<body>
+<header>
+    <div class="site-menu">
+        <h3>
+            Лабораторные работы на первый семестр курса Web-разработки.
+        </h3>
+        <ul>
+            <li><a href="lab-1.html">lab-1</a></li>
+            <li><a href="lab-2.html">lab-2</a></li>
+            <li><a href="lab-3.html">lab-3</a></li>
+        </ul>
+    </div>
+
+</header>
+<main>
+    <h1>
+        Лабораторная 1
+    </h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="#description">Описание лабораторной</a></li>
+            <li><a href="#algorithm">Порядок выполнения</a>
+                <ol>
+                    <li><a href="#software-installation">Установка ПО</a>
+                    </li>
+                    <li><a href="#project-theme-and-layout">Тема проекта и макет</a>
+                    </li>
+                    <li><a href="#charset">Кодировка страницы</a>
+                    </li>
+                    <li><a href="#outlines.css">outlines.css</a>
+                    </li>
+                    <li><a href="#creating-web-page">Создание веб-страницы</a>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <h2 id="description">
+            Описание лабораторной
+        </h2>
+        <p>
+            Данная лабораторная подразумевает создание макета сайта <strong>без использования знаний CSS</strong>,
+            только <b>HTML</b>. Создаем
+            сайт
+            резюме - портфолио. Главная задача данной лабораторной работы - ознакомиться с наиболее значимыми тегами и
+            правилами
+            их использования.
+        </p>
+    </section>
+    <section>
+        <h2 id="algorithm">
+            Порядок выполнения
+        </h2>
+        <ol>
+            <li id="software-installation"> Установить любой текстовый редактор или же специализированное ПО (WebStorm и
+                так далее) - на ваш выбор.
+            </li>
+            <li id="project-theme-and-layout">
+                <p>Определиться с темой проекта и нарисовать макет вашего сайта (схематично) - расположение картинок,
+                    текста,
+                    поля контактов.. - картинку также положить в гит репозиторий (Можно фотографию рисунка на
+                    листочке)</p>
+
+                <p>Пример:</p>
+                <img src="layout.png" alt="site layout">
+                <p>
+                    В качестве темы подойдут визитная карточка, портфолио с галереей, интернет-магазин, гостевая книга,
+                    блог
+                    и тп
+                </p>
+            </li>
+            <li id="charset">Задать кодировку страницы UTF-8</li>
+            <li>Описать ключевые слова в метаинформации страницы, а также в описании страницы
+            </li>
+            <li id="outlines.css">Для упрощения проектирования подключить файл стилей outlines.css (опционально)
+            </li>
+            <li id="creating-web-page">Приступить к написанию сайта:
+                <ul>
+                    <li>Добавить Doctype</li>
+                    <li> Добавить теги &lt;html&gt;, &lt;head&gt; и &lt;body&gt;,</li>
+                    <li> Установить язык для сайта-русский</li>
+                    <li> Добавить заголовок страницы</li>
+                    <li> Убедиться что в readme.md указана ваше ФИО и номер группы, добавить выбранную тему.</li>
+                    <li>
+                        Выделить логические элементы вашего сайта с помощью тегов:
+                        <ul>
+                            <li>main</li>
+                            <li>header</li>
+                            <li>footer</li>
+                        </ul>
+                    </li>
+                    <li>Использовать теги section, nav, article, aside, h1-h6, p - согласно их предназначению. (смотреть
+                        лекцию)
+                        <aside>
+                            Ниже в этом подпункте использованы требуемые теги
+                        </aside>
+                        <article class="forecast">
+                            <h4>Weather forecast for Saint Petersburg</h4>
+                            <section class="day-forecast">
+                                <time datetime="2022-09-24">24 September 2022</time>
+                                <p>Partly cloudy.</p>
+                            </section>
+                            <section class="day-forecast">
+                                <time datetime="2020-09-25">25 September 2022</time>
+                                <p>Cloudy</p>
+                            </section>
+                            <section class="day-forecast">
+                                <time datetime="2020-09-26">26 September 2022</time>
+                                <p>Light rain.</p>
+                            </section>
+                        </article>
+                    </li>
+
+                    <li>Использовать теги перечисления (ul, ol) (например, для описание ваших успехов или неуспехов).
+                    </li>
+                    <li>Вставить блок с псевдографикой из символов ASCII
+                        <pre class="ascii-art">
+    _    ____   ____ ___ ___      _         _
+   / \  / ___| / ___|_ _|_ _|    / \   _ __| |_
+  / _ \ \___ \| |    | | | |    / _ \ | '__| __|
+ / ___ \ ___) | |___ | | | |   / ___ \| |  | |_
+/_/   \_\____/ \____|___|___| /_/   \_\_|   \__|
+</pre>
+                    </li>
+                    <li>Вставить snippet кода, оформив его соответствующими тегами.
+                        <pre><code>
+fn main() {                     //Первая программа на Rust
+    println!("Hello, world!");
+}
+</code></pre>
+
+                    </li>
+                    <li>Добавить цитату и формулу вашего успеха (желательно использовать тэги sub и sup)
+                        <hr>
+                        <blockquote cite="https://htmlbook.ru/html/blockquote">
+                            Тег &lt;blockquote&gt; предназначен для выделения длинных цитат внутри документа.
+                        </blockquote>
+                        <hr>
+                        e<sup>i&pi;</sup> + 1 =<sub>(тождественно)</sub> 0
+                    </li>
+                    <li>Для выделения <em>наиболее</em> важных моментов использовать <strong>strong</strong> и <b>b</b>,
+                        <em>em</em> и <i>i</i>,
+                        <del>del</del>
+                        и
+                        <ins>ins</ins>
+                        <p>Я использовал тег
+                            <del>&lt;del&gt;</del>
+                            <ins>&lt;ins&gt;</ins>
+                            !
+                        </p>
+                    </li>
+                </ul>
+        </ol>
+    </section>
+
+    <p>
+        *Если имеется понимание, для чего нужен <i>div</i> и <i>span</i> - использовать, если нет, то начать изучать
+        вопрос)
+    </p>
+    <p>
+        Цель работы - создание макета и наполнение его информацией. Если один-два подпункта из 6 пункта кажутся
+        избыточными,
+        и вы сможете доказать, почему на вашем сайте они не нужны (возможно предложив другие пункты) - на финальный балл
+        не
+        повлияет.
+    </p>
+    <p>
+        Для большей простоты выделения элементов и понимания их расположения предлагается использовать
+        <a HREF="https://github.com/ArtMan-8/outline-prototype">
+            https://github.com/ArtMan-8/outline-prototype</a> или аналоги.
+    </p>
+
+
+</main>
+<footer>
+    <hr>
+    <a HREF="https://scoutteodor.github.io/web/">Github Pages
+    </a>
+</footer>
+</body>
+</html>
