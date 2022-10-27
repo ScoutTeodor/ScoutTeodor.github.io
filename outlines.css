@@ -13,7 +13,6 @@ body {
     clear: both;
 }
 
-
 h1,
 h2,
 h3,
@@ -63,9 +62,42 @@ p {
     line-height: 150%;
 }
 
+table {
+    display: grid;
+    background: #b0c4de;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+th, td {
+    width: content-box;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+caption {
+    color: #25457d
+}
+
+th {
+    background: #bcbcbc;
+    text-align: left;
+}
+
+tr:nth-child(odd) td {
+    background: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background: #dfe7f2;
+}
+
+td {
+    text-align: right;
+    border-color: #d6dde6;
+}
 
 img {
-
     float: contour;
     clear: left;
     margin: 5px;
@@ -92,6 +124,10 @@ a:hover {
 
 a:active {
     color: blue;
+}
+
+.site-menu ul {
+    list-style-type: none;
 }
 
 .main-content {
