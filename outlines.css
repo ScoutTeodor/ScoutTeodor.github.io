@@ -1,0 +1,162 @@
+body {
+    background: #f9f9f9;
+    align-content: space-between;
+}
+
+body {
+    font-family: Segoe UI, serif;
+
+    color: #222;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    clear: both;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    margin: 0.75em 0;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    text-decoration: overline underline;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 22px;
+    font-size: 1.375rem;
+}
+
+h5 {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 19px;
+    font-size: 1.1875rem;
+}
+
+p {
+    margin-bottom: 1.5em;
+    line-height: 150%;
+}
+
+
+img {
+
+    float: contour;
+    clear: left;
+    margin: 5px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    border: 0;
+
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.50rem grey);
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+.main-content {
+    border-radius: 10px 0 !important;
+    position: relative;
+    padding: 1em 2em 0;
+    background: #fff;
+    text-align: justify;
+
+    width: 75%;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 870px;
+}
+
+.sidebar-menu {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+
+    background: #fff;
+    text-align: justify;
+
+    overflow-x: hidden;
+
+    font-weight: bolder;
+
+    box-sizing: border-box;
+
+    border: 3px solid green;
+    margin-right: inherit;
+}
+
+@media screen and (max-width: 1740px) {
+    .sidebar-menu {
+        display: none;
+    }
+}
+
+.menu-heading {
+    background-color: lightgreen;
+    font-family: Helvetica, serif;
+    font-weight: bold;
+    font-size: large;
+    width: 15%;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    text-align: center;
+    vertical-align: middle;
+    horiz-align: center;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    align-self: center;
+}
+
+.menu-navigation {
+    margin-left: -10%;
+    padding: 1em 2em 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
