@@ -66,11 +66,14 @@ table {
     display: grid;
     background: #b0c4de;
     border-collapse: collapse;
+    border: 1px solid;
     overflow-x: auto;
 }
 
 th, td {
     width: content-box;
+    border: 1px solid;
+
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -166,6 +169,22 @@ a:active {
     .sidebar-menu {
         display: none;
     }
+}
+
+#gallery {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery div {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+#gallery div img {
+    width: 50%;
 }
 
 .menu-heading {
