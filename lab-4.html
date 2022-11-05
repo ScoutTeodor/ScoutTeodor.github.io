@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang=“ru">
+<head>
+    <title>Лабораторная 4</title>
+    <link href="outlines.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Лабораторная, Четвертая, 4, Web">
+    <script src="scripts/Page_Load_Time.js"></script>
+    <script src="scripts/footer.js"></script>
+</head>
+<body>
+<header>
+    <div class="site-menu">
+        <h3>
+            Лабораторные работы на первый семестр курса Web-разработки.
+        </h3>
+        <ul>
+            <li><a href="lab-1.html">lab-1</a></li>
+            <li><a href="lab-2.html">lab-2</a></li>
+            <li><a href="lab-3.html">lab-3</a></li>
+            <li><a href="lab-4.html">lab-4</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="sidebar-menu">
+    <div class="menu-heading uppercase">
+        Menu
+    </div>
+    <div class="menu-navigation">
+        <nav>
+            <ul>
+                <li><a href="#description">Описание лабораторной</a></li>
+                <li><a href="#algorithm">Порядок выполнения</a>
+                    <ol>
+                        <li><a href="#new-pages">Новые страницы</a>
+                        </li>
+                        <li><a href="#script">Создание скрипта</a>
+                        </li>
+                        <li><a href="#load-time">Событие загрузки страницы</a>
+                        </li>
+                        <li><a href="#interactivity">Интерактивность меню</a>
+                        </li>
+                        <li><a href="#active">«Активное» состояние </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+
+    <h1>
+        Лабораторная 4
+    </h1>
+    <section>
+        <h2 id="description">
+            Описание лабораторной
+        </h2>
+        <p>
+            Цель лабораторной работы – научится взаимодействовать с элементами и браузером используя встроенной
+            скриптовый движок JavaScript.
+        </p>
+        <h2 id="algorithm">
+            Порядок выполнения
+        </h2>
+        <ol>
+            <li id="new-pages"> Добавить новые страницы для вашего проекта, согласно пунктам меню в шапке сайта
+            </li>
+            <li id="script">
+                Создать скрипт, который будет выполняться на каждой странице, добавить его в отдельную папку и
+                подключить в разделе &lt;head&gt; ваших страниц.
+            </li>
+            <li id="load-time">
+                Используя <span style="color:deeppink;">f<del>IIFE</del></span>, подписаться на события загрузки
+                страницы и вывести в подвал статистическую информацию о
+                скорости загрузки
+            </li>
+            <li id="interactivity">
+                Добавить интерактивности меню, обработать события наведения мыши на конкретные пункты с использованием
+                CSS либо JS.
+            </li>
+            <li id="active">
+                В зависимости от того, на какой странице находится пользователь (можно понять по document.location)
+                добавить соответствующему пункту меню CSS class, отвечающий за «активное» состояние (см. пример выше).
+            </li>
+        </ol>
+    </section>
+</div>
+<footer id="footer">
+    <script src="scripts/footer.js"></script>
+</footer>
+</body>
+</html>
