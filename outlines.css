@@ -215,3 +215,7 @@ a:active {
 .uppercase {
     text-transform: uppercase;
 }
+
+.navigates {
+    background-color: #d1ffd1;
+}

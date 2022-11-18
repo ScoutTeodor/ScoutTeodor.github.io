@@ -2,7 +2,7 @@ footer =
     `
     <footer>
         <hr>
-            <p id="Page_Load_Time"></p>
+            <p id="page_load_time"></p>
             <a HREF="https://scoutteodor.github.io/web/">Github Pages
             </a>
     </footer>
