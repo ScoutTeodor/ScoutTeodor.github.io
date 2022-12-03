@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang=“ru">
+<head>
+    <title>Лабораторная 5</title>
+    <link href="outlines.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Лабораторная, Пятая, 5, Web">
+    <script src="scripts/page_load_time.js"></script>
+    <script src="scripts/active_nav_element.js"></script>
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+<header>
+    <div class="site-menu">
+        <h3>
+            Лабораторные работы на первый семестр курса Web-разработки.
+        </h3>
+        <ul>
+            <li><a href="lab-1.html">lab-1</a></li>
+            <li><a href="lab-2.html">lab-2</a></li>
+            <li><a href="lab-3.html">lab-3</a></li>
+            <li><a href="lab-4.html">lab-4</a></li>
+            <li><a href="lab-5.html">lab-5</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="sidebar-menu">
+    <div class="menu-heading uppercase">
+        Menu
+    </div>
+    <div class="menu-navigation">
+        <nav>
+            <ul>
+                <li><a href="#description">Описание лабораторной</a></li>
+                <li><a href="#algorithm">Порядок выполнения</a>
+                    <ol>
+                        <li><a href="#new-page">Создание отдельной страницы и отдельного файла со скриптом</a>
+                        </li>
+                        <li><a href="#form-and-div">&lt;form&gt; и &lt;div&gt; контейнеры</a>
+                        </li>
+                        <li><a href="#onSubmit">Обработка события и отрисовка</a>
+                        </li>
+                        <li><a href="#LocalStorage">«LocalStorage»</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+
+    <h1>
+        Лабораторная 5
+    </h1>
+    <section>
+        <h2 id="description">
+            Описание лабораторной
+        </h2>
+        <p>
+            Целью работы заключается в получении практических навыков по созданию разметки во время выполнения (in
+            runtime).
+        </p>
+        <p>
+            Необходимо создать отдельную страницу с Web-формой, в которой пользователь с помощью предложенных параметров
+            мог бы создать таблицу по некоему шаблону, например, расписание занятий на 5-ти дневную либо 6-ти дневную
+            неделю, выбрать максимальное количество занятий, язык на котором будет сгенерирована таблица и тому
+            подобное. </p>
+        <p>
+            Примерный ожидаемый результат лабораторной работы на примере проекта «список дел»:
+            <a href="https://i.imgur.com/y5m4LyI.gif">https://i.imgur.com/y5m4LyI.gif</a>
+        </p>
+        <h2 id="algorithm">
+            Порядок выполнения
+        </h2>
+        <ol>
+            <li id="new-page"> Создать отдельную страницу и отдельный файл со скриптом, добавить ссылку на
+                «конструктор» в меню.
+            </li>
+            <li id="form-and-div">
+                Добавить &lt;form&gt; на новую страницу и &lt;div&gt; контейнер куда будут размещены результаты
+                генерации.
+            </li>
+            <li id="onSubmit">
+                Обработать событие отправки формы (перехватить событие onSubmit) и без перезагрузки страницы отобразить
+                результат генерации
+            </li>
+            <li id="LocalStorage">
+                Предусмотреть возможность сохранения и загрузки введенных пользователем параметров в локальное хранилище
+                браузера пользователя (читай как LocalStorage).
+            </li>
+        </ol>
+
+        <p>
+            * Для стилизации элементов не используйте атрибуты style, предпочтительно использование атрибутов class из
+            вашего заранее созданного файла со стилями.
+        </p>
+    </section>
+
+
+    <div class="todo_list_container">
+        <h1>TODO List</h1>
+
+        <form id="todo_list">
+            <div id="task_input_container">
+                <label for="task_input">Задача: </label><input id="task_input" type="text" required>
+            </div>
+            <label for="date_input">Срок выполнения: </label><input id="date_input" type="date" required>
+            <br>
+            <input id="submit" type="submit" value="Записать">
+            <input id="reset" type="reset" value="Сброс">
+            <input id="clear" type="button" value="Очистить кеш">
+        </form>
+
+        <script>
+            function displayMessage() {
+                let confirmation = confirm("Clear all tasks?");
+
+                if (confirmation) {
+                    localStorage.clear();
+                    location.reload();
+                }
+            }
+
+            const btn = document.getElementById("clear");
+            btn.addEventListener("click", displayMessage);
+        </script>
+
+        <div id="deadlines"></div>
+
+    </div>
+
+</div>
+
+
+<footer id="footer">
+    <script src="scripts/footer.js"></script>
+</footer>
+</body>
+</html>
