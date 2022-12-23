@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang=“ru">
+<head>
+    <title>Лабораторная 6</title>
+    <link href="outlines.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Лабораторная, Шестая, 6, Web">
+    <script src="scripts/page_load_time.js"></script>
+    <script src="scripts/active_nav_element.js"></script>
+    <script src="scripts/comments.js"></script>
+
+</head>
+<body>
+<header>
+    <div class="site-menu">
+        <h3>
+            Лабораторные работы на первый семестр курса Web-разработки.
+        </h3>
+        <ul>
+            <li><a href="lab-1.html">lab-1</a></li>
+            <li><a href="lab-2.html">lab-2</a></li>
+            <li><a href="lab-3.html">lab-3</a></li>
+            <li><a href="lab-4.html">lab-4</a></li>
+            <li><a href="lab-5.html">lab-5</a></li>
+            <li><a href="lab-6.html">lab-6</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="sidebar-menu">
+    <div class="menu-heading uppercase">
+        Menu
+    </div>
+    <div class="menu-navigation">
+        <nav>
+            <ul>
+                <li><a href="#description">Описание лабораторной</a></li>
+                <li><a href="#algorithm">Порядок выполнения</a>
+                    <ol>
+                        <li><a href="#new-script">Добавление скрипта</a>
+                        </li>
+                        <li><a href="#gif-animation">preloader</a>
+                        </li>
+                        <li><a href="#Fetch-API">Fetch API</a>
+                        </li>
+                        <li><a href="#JSON-render">Получение данных</a>
+                        </li>
+                        <li><a href="#pseudo-random">Псевдо-случайная фильтрация</a>
+                        </li>
+                        <li><a href="#catch-error">Обработка ошибок</a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="main-content">
+
+    <h1>
+        Лабораторная 6
+    </h1>
+    <section>
+        <h2 id="description">
+            Описание лабораторной
+        </h2>
+        <p>
+            Цель лабораторной работы – познакомится с сущностью Promise и научится создавать http-запросы и корректно
+            обрабатывать ответы.
+        </p>
+        <p>
+            В качестве практикума студентам предлагается добавить «живых» данных на уже имеющийся прототип. В качестве
+            поставщика данных использовать сервис с Mock данным и, например: <a
+                href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a>
+        </p>
+        <p>
+            Перед началом работы необходимо выбрать ту часть проекта, в которую в дальнейшем будут загружаться данные.
+            Это может быть профиль пользователя, прошедшего авторизацию, комментарии под той или иной фото в галерее,
+            список пользователей в одной из уже созданных таблиц и т.п.
+        </p>
+        <p>
+            В качестве данных, которые предоставляет сервис из примера, предлагается 6 видов ресурсов на выбор:
+        <ul>
+            <li>Сообщения для гостевой книги/форума
+                <br> (Поля: body (само сообщение), title (заголовок)
+            </li>
+            <li>Комментарии под фото либо любым другим материалом
+                <br> (Поля: name (автор комментария), email (email
+                автора комментария), body (комментарий)
+            </li>
+            <li>Альбомы и фотографии
+                <br> (Поля: title (название), thumbnailUrl (ссылка на маленькое изображение), url
+                (ссылка на изображение))
+            </li>
+            <li>Список дел
+                <br> (Поля: title (описание), completed (boolean флаг))
+            </li>
+            <li>Пользователи
+                <br> (Поля: username, name, email, address, phone, website, company)
+            </li>
+        </ul>
+        </p>
+        <h2 id="algorithm">
+            Порядок выполнения
+        </h2>
+        <ol>
+            <li id="new-script"> Добавить отдельный скрипт и подключить на страницу где подразумевается сетевое
+                взаимодействие
+            </li>
+            <li id="gif-animation">
+                Добавить gif-анимацию либо свою произвольную css-анимацию для элемента типа preloader под элементом где
+                планируется отобразить запрашиваемый контент
+
+            </li>
+            <li id="Fetch-API">
+                Дождаться события загрузки страницы и инициализовать обращение к поставщику данных используя <a
+                    href="https://developer.mozilla.org/ru/docs/Web/API/Fetch_API">Fetch API</a>
+            </li>
+            <li id="JSON-render">
+                После получения ответа, скрыть preloader, десериализовать данные в JSON объект и отрендерить полученные
+                данные
+            </li>
+            <li id="pseudo-random">
+                Добавить псевдо-случайную фильтрацию к запросам (например при первом обращении получать комментарии с id
+                100 и выше, а при втором c id 200 и меньше).
+            </li>
+            <li id="catch-error">
+                Добавить обработку ошибок (например – сеть перестала быть доступна и запрос не был выполнен), в случае
+                исключительной ситуации добавить под элементом заплатку, например, «⚠ Что-то пошло не так».
+            </li>
+        </ol>
+    </section>
+</div>
+<h3>Комментарии</h3>
+<div id="comments" class="main-content">
+    <div class="preloader">
+        <img src="preloader.gif"/>
+    </div>
+</div>
+<footer id="footer">
+    <script src="scripts/footer.js"></script>
+</footer>
+</body>
+</html>

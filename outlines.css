@@ -279,3 +279,37 @@ input {
     top: -3.75em;
     left: 7em;
 }
+
+.preloader{
+    text-align: center;
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.comment{
+    border-radius: 10px 0 !important;
+    background: #d1ffd1;
+    padding: 1em;
+}
+
+.comment_author{
+    padding: 1em;
+    border-style: dashed;
+    border-color: #9ABF49;
+}
+
+.comment_author_name{
+    font-weight: bold;
+}
+
+.comment_author_photo{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1em;
+}
